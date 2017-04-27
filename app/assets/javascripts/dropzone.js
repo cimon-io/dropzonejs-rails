@@ -244,7 +244,9 @@
       dragleave: function(e) {
         return this.element.classList.remove("dz-drag-hover");
       },
-      paste: noop,
+      paste: function(e) {
+        e.stopPropagation();
+      },
       reset: function() {
         return this.element.classList.remove("dz-started");
       },
