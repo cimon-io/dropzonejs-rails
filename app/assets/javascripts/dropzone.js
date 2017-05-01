@@ -664,9 +664,6 @@
             })(this),
             "paste": (function(_this) {
               return function(e) {
-                if ((e != null ? (_ref = e.clipboardData) != null ? _ref.items : void 0 : void 0) == null) {
-                  noPropagation(e);
-                }
                 return _this.paste(e);
               };
             })(this)
